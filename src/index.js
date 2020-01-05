@@ -3,9 +3,11 @@ import PropTypes from 'prop-types'
 
 import styles from './styles.scss'
 
-import Foo from './modules/Foo'
-import Bar from './modules/Bar'
+// import Foo from './modules/Foo'
+// import Bar from './modules/Bar'
 import Layout1 from './layouts/Layout1'
+
+import { library } from './LibraryLoader'
 
 class ExampleComponent extends Component {
   static propTypes = {
@@ -25,4 +27,4 @@ class ExampleComponent extends Component {
   }
 }
 
-export { ExampleComponent, Foo, Bar, Layout1 }
+export { ExampleComponent, Layout1, library }
