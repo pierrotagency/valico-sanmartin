@@ -1,12 +1,17 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export const componentFoo = props => (
+export const Foo = props => (
   <div className='foo'>
     <h2>FOO</h2>
     {props.fields.title && <h3>{props.fields.title}</h3>}
     {props.fields.subtitle && <h4>{props.fields.subtitle}</h4>}
   </div>
 )
+
+Foo.propTypes = {
+  fields: PropTypes.object
+}
 
 export const schemaFoo = {
   title: 'Foo Module Form',

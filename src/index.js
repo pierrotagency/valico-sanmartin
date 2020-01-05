@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 
 import styles from './styles.scss'
 
-// import Foo from './modules/Foo'
-// import Bar from './modules/Bar'
 import Layout1 from './layouts/Layout1'
 
 import { library } from './LibraryLoader'

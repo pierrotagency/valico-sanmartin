@@ -1,16 +1,16 @@
 // import ReactDynamicImport from './dynamic-import'
 
-import { componentBar, defaultsBar, schemaBar } from './modules/Bar'
-import { componentFoo, defaultsFoo, schemaFoo } from './modules/Foo'
+import { Bar, defaultsBar, schemaBar } from './modules/Bar'
+import { Foo, defaultsFoo, schemaFoo } from './modules/Foo'
 
 export const library = {
   Foo: {
-    component: componentFoo,
+    component: Foo,
     schema: schemaFoo,
     defaults: defaultsFoo
   },
   Bar: {
-    component: componentBar,
+    component: Bar,
     schema: schemaBar,
     defaults: defaultsBar
   }

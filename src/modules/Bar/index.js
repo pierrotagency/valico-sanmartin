@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export const componentBar = props => (
+export const Bar = props => (
   <div className='bar'>
     <h2>BAR</h2>
     {props.fields.title && <h3>{props.fields.title}</h3>}
@@ -12,6 +13,10 @@ export const componentBar = props => (
     </ul>
   </div>
 )
+
+Bar.propTypes = {
+  fields: PropTypes.object
+}
 
 export const defaultsBar = {
   title: 'Default Title Bar',
