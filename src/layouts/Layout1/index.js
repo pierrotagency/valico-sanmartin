@@ -1,5 +1,4 @@
 import React from 'react'
-// import Area from '../../components/Area'
 
 import styles from './index.scss'
 

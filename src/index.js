@@ -7,7 +7,7 @@ import Layout1 from './layouts/Layout1'
 
 import { library } from './LibraryLoader'
 
-class ExampleComponent extends Component {
+class AboutComponent extends Component {
   static propTypes = {
     text: PropTypes.string
   }
@@ -19,10 +19,10 @@ class ExampleComponent extends Component {
 
     return (
       <div className={styles.test}>
-        Example Component: {text}
+        About: {text}
       </div>
     )
   }
 }
 
-export { ExampleComponent, Layout1, library }
+export { AboutComponent, Layout1, library }
