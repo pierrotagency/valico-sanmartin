@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import styles from './index.scss'
+
 export const Bar = props => (
-  <div className='bar'>
+  <div className={styles.main}>
     <h2>BAR</h2>
     {props.fields.title && <h3>{props.fields.title}</h3>}
     {props.fields.subtitle && <h4>{props.fields.subtitle}</h4>}
