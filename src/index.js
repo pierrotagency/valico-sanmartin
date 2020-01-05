@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './styles.css'
+import styles from './styles.scss'
 
-export default class ExampleComponent extends Component {
+import Foo from './modules/Foo'
+import Bar from './modules/Bar'
+import Layout1 from './layouts/Layout1'
+
+class ExampleComponent extends Component {
   static propTypes = {
     text: PropTypes.string
   }
@@ -20,3 +24,5 @@ export default class ExampleComponent extends Component {
     )
   }
 }
+
+export { ExampleComponent, Foo, Bar, Layout1 }
