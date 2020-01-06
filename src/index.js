@@ -9,17 +9,19 @@ import { library } from './LibraryLoader'
 
 class AboutComponent extends Component {
   static propTypes = {
-    text: PropTypes.string
+    coreVersion: PropTypes.string,
+    coreName: PropTypes.string
   }
 
   render() {
     const {
-      text
+      coreName,
+      coreVersion
     } = this.props
 
     return (
-      <div className={styles.test}>
-        About: {text}
+      <div className={styles.about}>
+        {process.env.REACT_APP_NAME}@{process.env.REACT_APP_VERSION} - {coreName}@{coreVersion}
       </div>
     )
   }
