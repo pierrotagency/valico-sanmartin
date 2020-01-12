@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './index.scss'
 
-function Layout1({
+function Template1({
   children: areas,
   renderModule,
   moduleAdded,
@@ -44,4 +44,4 @@ function Layout1({
   )
 }
 
-export default Layout1
+export default Template1

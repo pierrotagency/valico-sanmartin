@@ -1,5 +1,5 @@
 import { library } from './LibraryLoader'
-import { layouts } from './LayoutLoader'
+import { templates } from './TemplateLoader'
 import { AboutComponent } from './About'
 
-export { AboutComponent, library, layouts }
+export { AboutComponent, library, templates }

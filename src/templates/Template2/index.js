@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './index.scss'
 
-function Layout2({
+function Template2({
   children: areas,
   renderModule,
   moduleAdded,
@@ -31,4 +31,4 @@ function Layout2({
   )
 }
 
-export default Layout2
+export default Template2
