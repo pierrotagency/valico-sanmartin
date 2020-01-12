@@ -1,5 +1,7 @@
 import { library } from './LibraryLoader'
 import { templates } from './TemplateLoader'
-import { AboutComponent } from './About'
 
-export { AboutComponent, library, templates }
+const appName = process.env.REACT_APP_NAME
+const appVersion = process.env.REACT_APP_VERSION
+
+export { appName, appVersion, library, templates }
