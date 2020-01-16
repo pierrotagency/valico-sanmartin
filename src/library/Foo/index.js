@@ -5,7 +5,6 @@ import styles from './index.scss'
 
 export const Foo = props => (
   <div className={styles.main}>
-    <h2>FOO</h2>
     {props.fields.title && <h3>{props.fields.title}</h3>}
     {props.fields.subtitle && <h4>{props.fields.subtitle}</h4>}
   </div>
@@ -16,8 +15,8 @@ Foo.propTypes = {
 }
 
 export const schemaFoo = {
-  title: 'Foo Module Form',
-  description: 'A simple form example.',
+  // title: 'Foo Module Form',
+  // description: 'A simple form example.',
   type: 'object',
   required: ['title', 'subtitle'],
   properties: {
