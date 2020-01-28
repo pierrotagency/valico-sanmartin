@@ -1,20 +1,16 @@
 export const Taxonomy2 = {
-  title: 'Taxonomy',
+  title: 'Taxonomy 2',
   description: 'tax tax tax',
   type: 'object',
   required: ['title'],
   properties: {
     title: {
       type: 'string',
-      title: 'Title'
+      title: 'Title 2'
     },
     subtitle: {
       type: 'string',
       title: 'Subtitle'
-    },
-    minViewCount: {
-      type: 'integer',
-      title: 'Min View Count'
     }
   }
 }
